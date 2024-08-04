@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>The Simon Game</title>
+    
+</head>
+<body>
+    
+    <div class="box">
+        <div class="container">
+            <h1 class="title">Level 0</h1>
+            <div class="game">
+                <div class="square green"></div>
+                <div class="square red"></div>
+                <div class="square yellow"></div>
+                <div class="square blue"></div>
+            </div>
+            <div class="text instructions">
+                <h3>Use these keys to press each of the colors once the game starts:</h3>
+                <div class="text row">
+                    <p><strong>Q:</strong> green</p>
+                    <p><strong>P:</strong> red</p>
+                    
+                </div>
+                <div class="text row">
+                    <p><strong>A:</strong> yellow</p>
+                    <p><strong>L:</strong> blue</p>
+                </div>
+            </div>
+        </div>
+        <div class="cover-view"></div>
+        <div class="supplemental-view instruction-view">
+            <h1 class="instruction-h1">
+                Welcome to
+                <br>
+                The Simon Game
+            </h1>
+            <h2 class="pre-game-instructions">Press the spacebar to continue...</h2>
+        </div>
+        <div class="supplemental-view high-score-view">
+            <h1 class="high-score-h1">
+                WELL DONE!
+                <br>
+                New High Score!
+            </h1>
+            <!-- <h2 class="pre-game-instructions">
+                Enter your 3-letter 
+                <br>
+                name below:
+            </h2> -->
+            <div class="scores">
+                <h1 class="high-score">HIGH SCORES</h1>
+                
+                <div class="scores-tables">
+                    <div class="score-row"><h2>NAME</h2><h2> LEVEL</h2></div>
+                    <div class="score-row"><p class="score-item name0">-</p><p class="score-item level0">-</p></div>
+                    <div class="score-row"><p class="score-item name1">-</p><p class="score-item level1">-</p></div>
+                    <div class="score-row"><p class="score-item name2">-</p><p class="score-item level2">-</p></div>
+                    <div class="score-row"><p class="score-item name3">-</p><p class="score-item level3">-</p></div>
+                    <div class="score-row"><p class="score-item name4">-</p><p class="score-item level4">-</p></div>
+                </div>
+            </div>
+            <p id="three-character-warning">Name needs to be 3 characters.</p>
+            <input id="input-box" type="text">
+        </div>
+    </div>
+    
+    <div class="hidden">
+        <audio class="greenAudio" src="./assets/audio/green.mp3"></audio>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+        
+    </script>
+    <script src="./index.js">
+        
+    </script>
+    
+</body>
+</html>
+
+<div class="frame">
+    <div class="center">
+    </p>
+</div>
+</div>
