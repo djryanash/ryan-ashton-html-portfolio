@@ -1,3 +1,3 @@
 # Ignore SSL certificate and key files
-./primary.crt
-./private.key
+private/primary.crt
+private/private.key
