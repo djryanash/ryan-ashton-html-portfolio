@@ -1,0 +1,8 @@
+{
+    "liveServer.settings.https": {
+        "enable": true,
+        "cert": "/Users/ryanashton/Documents/visual-studio-projects/udemy-web-development-bootcamp/Web Development Projects/00_PART_01/4.3 HTML Porfolio Project/primary.crt",
+        "key": "/Users/ryanashton/Documents/visual-studio-projects/udemy-web-development-bootcamp/Web Development Projects/00_PART_01/4.3 HTML Porfolio Project/private.key",
+        "passphrase": "12345" // Include this only if your private key is encrypted with a passphrase
+    }
+}
