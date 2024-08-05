@@ -1,3 +1,10 @@
+window.addEventListener("load", (event) => {
+    //removeLocalStorage()
+    showInstructionView()
+    //showHighScoreView()
+    console.log('storageEstimate: ' + navigator.storage.estimate())
+});
+
 if (storageAvailable("localStorage")) {
     console.log("'localStorage' available.")
 } else {
@@ -8,22 +15,16 @@ window.addEventListener("storage", (e) => {
     console.log("something was stored in 'localStorage': " + e)
 })
 
-window.addEventListener("load", (event) => {
-    //removeLocalStorage()
-    showInstructionView()
-    //showHighScoreView()
-});
-
 var enteringName = false 
 var instructing = true 
 var playersTurn = false 
 var gameStarted = false 
 var playersLevel = 0
-var green = new Audio("./assets/audio/green.mp3")
-var red = new Audio("./assets/audio/red.mp3")
-var yellow = new Audio("./assets/audio/yellow.mp3")
-var blue = new Audio("./assets/audio/blue.mp3")
-var marioDeath = new Audio('./assets/audio/mario-death-sfx.mp3')
+var green = new Audio("./audio/green.mp3")
+var red = new Audio("./audio/red.mp3")
+var yellow = new Audio("./audio/yellow.mp3")
+var blue = new Audio("./audio/blue.mp3")
+var marioDeath = new Audio('./audio/mario-death-sfx.mp3')
 var playersMoves = 0 
 var highScoreInsertLevel = 100
 var simonsChoices = [
