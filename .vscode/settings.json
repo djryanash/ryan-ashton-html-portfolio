@@ -1,0 +1,7 @@
+{  
+"liveServer.settings.https": {
+    "enable": true,
+    "cert": "../private/primary.crt",
+    "key": "../private/private.key",
+    "passphrase": "12345" }  
+}
