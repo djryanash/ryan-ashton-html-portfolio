@@ -1,7 +1,10 @@
-{  
-"liveServer.settings.https": {
+{
+  "liveServer.settings.root": "/",
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.https": {
+    "key": "/Users/ryanashton/Library/Application Support/mkcert/localhost.key",
+    "cert": "/Users/ryanashton/Library/Application Support/mkcert/localhost.crt",
     "enable": true,
-    "cert": "../private/primary.crt",
-    "key": "../private/private.key",
-    "passphrase": "12345" }  
+    "passphrase": ""
+  }
 }

@@ -2,18 +2,27 @@ window.addEventListener("load", (event) => {
     //removeLocalStorage()
     showInstructionView()
     //showHighScoreView()
-    console.log('storageEstimate: ' + navigator.storage.estimate())
+    logStorageEstimate()
 });
 
-if (storageAvailable("localStorage")) {
-    console.log("'localStorage' available.")
-} else {
-    console.log("No 'localStorage'.")
+async function logStorageEstimate() {
+    try {
+        const estimate = await navigator.storage.estimate();
+        let quotaMb = (estimate.quota / 1024 / 1024)
+        let usageMb = (estimate.usage / 1024) / 1024
+        console.log('storage.quota: ' + quotaMb.toFixed(1) + 'Mb');
+        console.log('storage.usage: ' + usageMb.toFixed(1) + 'Mb');
+        
+        
+        
+    } catch (error) {
+        console.log('error: ' + error)
+    }
+    
 }
 
-window.addEventListener("storage", (e) => {
-    console.log("something was stored in 'localStorage': " + e)
-})
+let workerScript = './workerFile.js'
+let webWorker01 = new Worker(workerScript)
 
 var enteringName = false 
 var instructing = true 
