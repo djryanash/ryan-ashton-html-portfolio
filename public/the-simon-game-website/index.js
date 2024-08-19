@@ -239,6 +239,7 @@ function gameOver() {
     marioDeath.play() 
     playersTurn = false
     preGameInstructionsCounter = 100
+    $('input#input-box').text('')
     const scoreAndLevel = playerScoreAndLevel(playersLevel)
     const isInTopFive = scoreAndLevel[0]
     highScoreInsertLevel = scoreAndLevel[1]
