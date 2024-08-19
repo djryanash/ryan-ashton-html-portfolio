@@ -103,13 +103,11 @@ div.square {
 div.green {
     background-color: rgb(56, 185, 56);
     border-radius: 100% 10% 10% 10%;
-    padding-top: 40px;
 }
 
 div.red {
     background-color: rgb(255, 76, 63);
     border-radius: 10% 100% 10% 10%;
-    padding-top: 40px;
 }
 
 div.yellow {
@@ -221,7 +219,6 @@ p#three-character-warning {
     
 }
 
-h4.square-text {
-    font-size: 35px;
-    line-height: 0%;
+p.square-text {
+    font-size: 25px;
 }
