@@ -97,16 +97,19 @@ div.square {
     padding: 20px;
     margin: 5px;
     border: 4px solid;
+    text-align: center;
 }
 
 div.green {
     background-color: rgb(56, 185, 56);
     border-radius: 100% 10% 10% 10%;
+    padding-top: 40px;
 }
 
 div.red {
     background-color: rgb(255, 76, 63);
     border-radius: 10% 100% 10% 10%;
+    padding-top: 40px;
 }
 
 div.yellow {
@@ -216,4 +219,9 @@ p#three-character-warning {
     font-weight: 600;
     font-size: small;
     
+}
+
+h4.square-text {
+    font-size: 35px;
+    line-height: 0%;
 }
